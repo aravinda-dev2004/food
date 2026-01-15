@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Popular Recipes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="dark-mode">
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">FoodCulture</span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="culture.html" class="nav-link">Food Culture</a></li>
+        <li class="nav-item"><a href="recipes.html" class="nav-link active">Recipes</a></li>
+        <li class="nav-item"><a href="methods.html" class="nav-link">Cooking Methods</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Popular Recipes</h1>
+  </header>
+
+  <section class="content-section">
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.iGdpmyRAF7cLGqJvru-XLwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Sri Lankan Rice and Curry" />
+        <h3>Sri Lankan Rice and Curry</h3>
+        <p>A traditional Sri Lankan meal consisting of rice served with various vegetable, meat, and fish curries.</p>
+      </div>
+
+      <div class="recipe-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.YKiSe0k_Wz5aFuBKycKCcAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Pasta Carbonara" />
+        <h3>Italian Pasta Carbonara</h3>
+        <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+      </div>
+
+      <div class="recipe-card">
+        <img src="https://www.cookingclassy.com/wp-content/uploads/2015/01/cake-mix-waffles5-srgb..jpg"
+          alt="Belgium waffle" />
+        <h3>Belgium waffle</h3>
+        <p>Belgium waffles were originally leavened with yeast,but baking powder is now often used.they are often eaten
+          asa a breackfast food.</p>
+      </div>
+      <div class="recipe-card">
+        <img src="https://d1yfn1dfres2va.cloudfront.net/012/7b/04/7b04f0bbc99ce1bfbfcc4bbc5559064d_640m.jpg"
+          alt="Irish Stew" />
+        <h3>Ireland Irish stew</h3>
+        <p>Any variety of meat and root vegetable stew native to Ireland.As in all traditional folk dishes,the exact
+          recipe is not consistent from time to time,or place to place.</p>
+      </div>
+
+
+      <div class="recipe-card">
+        <img src="https://glebekitchen.com/wp-content/uploads/2020/01/spicybeefnoodlesouptopbowl.jpg" alt="pho" />
+        <h3>Vietnam Pho</h3>
+        <p>Rice noodles in beef broth seasoned with cumin,coriander powder,black cerdamom,roasted onion powder,roated
+          ginger powder,fennel and cloves.</p>
+      </div>
+      <div class="recipe-card">
+        <img src="https://elacaters.com/wp-content/uploads/2024/08/fish-vattichath.jpg" alt="Machher Jhol" />
+        <h3>Bangladesh Machher Jhol</h3>
+        <p>Machher Jhol or Machha Jhola is a traditional Bengali and odia spicy fish stew.It is in the from of a very
+          spicy that is served with rice.</p>
+
+        <div class="recipe-grid">
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Food Culture Project | All rights reserved</p>
+  </footer>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }));
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Culture Recipes and Cooking Methods</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="dark-mode">
+  <link rel="stylesheet" href="styles.css" />
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">FoodCulture</span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="home.html" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="culture.html" class="nav-link">Food Culture</a></li>
+        <li class="nav-item"><a href="recipes.html" class="nav-link">Recipes</a></li>
+        <li class="nav-item"><a href="methods.html" class="nav-link">Cooking Methods</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header-container">
+      <h1>Food Culture Recipes & Cooking Methods</h1>
+      <p>Explore tastes and traditions from around the world</p>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <h2>Welcome to the World of Food</h2>
+    <p>Discover how culture shapes our meals, explore traditional recipes, and learn different cooking methods used
+      across the globe!</p>
+  </section>
+
+  <section class="feedback-section">
+    <div class="feedback-container">
+      <h2 class="feedback-title">What Our Customers Say</h2>
+      <p class="feedback-subtitle">Real experiences from food lovers around the world</p>
+
+      <div class="feedback-grid">
+        <div class="feedback-card">
+          <div class="stars">5 Stars</div>
+          <p class="feedback-text">"This website has transformed my cooking! The recipes are authentic and easy to
+            follow. I've learned so much about different cultures through their food."</p>
+          <div class="customer-info">
+            <div class="customer-avatar">S</div>
+            <div>
+              <h4 class="customer-name">Sarah Johnson</h4>
+              <p class="customer-location">New York, USA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-card">
+          <div class="stars">5 Stars</div>
+          <p class="feedback-text">"Amazing collection of traditional recipes! I've been searching for authentic dishes
+            from my grandmother's region, and I found them here. Thank you!"</p>
+          <div class="customer-info">
+            <div class="customer-avatar">M</div>
+            <div>
+              <h4 class="customer-name">Marco Rossi</h4>
+              <p class="customer-location">Rome, Italy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-card">
+          <div class="stars">5 Stars</div>
+          <p class="feedback-text">"The cooking methods section is incredibly detailed. As a culinary student, this has
+            been an invaluable resource for my studies. Highly recommended!"</p>
+          <div class="customer-info">
+            <div class="customer-avatar">A</div>
+            <div>
+              <h4 class="customer-name">Aisha Patel</h4>
+              <p class="customer-location">Mumbai, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-card">
+          <div class="stars">5 Stars</div>
+          <p class="feedback-text">"Love the cultural insights alongside the recipes. It's not just about cooking; it's
+            about understanding and respecting food traditions worldwide."</p>
+          <div class="customer-info">
+            <div class="customer-avatar">T</div>
+            <div>
+              <h4 class="customer-name">Takeshi Yamamoto</h4>
+              <p class="customer-location">Tokyo, Japan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Food Culture Project | All rights reserved</p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }));
+  </script>
+</body>
+
+</html>
